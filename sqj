@@ -1,6 +1,8 @@
 
 
 
+
+
 CREATE TABLE ori_wechat_solr.wechat_user_add_external (
 	id varchar(10) NOT NULL COMMENT '表id',
 	userid bigint NULL COMMENT '成员id',
@@ -18,7 +20,7 @@ COMMENT='成员添加的客户表';
 ALTER TABLE ori_wechat_solr.wechat_follow_user ADD updatedBy bigint NULL COMMENT '更新用户';
 
 ALTER TABLE ori_wechat_solr.wechat_user_add_external ADD (
-status int NULL COMMENT '状态',
-createdAt timestamp NULL COMMENT '创建时间'
-
+createdBy bigint NULL COMMENT '创建用户',
+updatedAt timestamp NULL COMMENT '更新时间',
+updatedBy bigint NULL COMMENT '更新用户'
 )
