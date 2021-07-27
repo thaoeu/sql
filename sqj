@@ -1,5 +1,18 @@
-
-
+bigint '表id'	id
+bigint '外部人id'	external_userid
+bigint '外部联系人名称'	name
+bigint '头像'	avatar
+int '类型'	type
+int '性别'	gender
+bigint '微信身份标识'	unionid
+bigint '职位'	position
+bigint '企业名简称'	corp_name
+bigint '企业名全称'	corp_full_name
+bigint '扩展信息'	external_profile
+timestamp '创建时间'	createdAt
+bigint '创建用户'	createdBy
+timestamp '更新时间'	updatedAt
+bigint '更新用户'	updatedBy
 
 
 CREATE TABLE ori_wechat_solr.wechat_user_add_external (
