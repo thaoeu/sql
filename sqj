@@ -2,7 +2,6 @@
 
 
 
-
 CREATE TABLE ori_wechat_solr.wechat_user_add_external (
 	id varchar(10) NOT NULL COMMENT '表id',
 	userid bigint NULL COMMENT '成员id',
